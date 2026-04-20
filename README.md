@@ -46,9 +46,7 @@ Agri-Rakshak/
 │   └── scripts/
 │       └── download_model.py
 │
-├── frontend/
-│
-├── models/        # (auto-downloaded, ignored in git)
+├── frontend       # (auto-downloaded, ignored in git)
 │
 ├── .gitignore
 └── README.md
