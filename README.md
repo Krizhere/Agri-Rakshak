@@ -46,8 +46,7 @@ Agri-Rakshak/
 │   └── scripts/
 │       └── download_model.py
 │
-├── frontend       # (auto-downloaded, ignored in git)
-│
+├── frontend
 ├── .gitignore
 └── README.md
 ```
@@ -95,14 +94,26 @@ pip install -r backend/requirements.txt
 
 They are hosted on Google Drive.
 
-### 👉 Automatic Download
+### 👉 Manual Model Download
 
-Models will be downloaded automatically when you run the backend.
+Please download the trained models manually from the Google Drive folder and place them inside the `models/` directory before running the backend.
 
-OR manually run:
+Google Drive folder:
+https://drive.google.com/drive/folders/1PBCUrB0KOX-ypQOFNrbHvFCYVGmdFrtZ?usp=sharing
+
+### ✅ Tasks to Complete
+
+1. Open the Google Drive folder link above.
+2. Download both trained model files to your system.
+3. Create a `models/` folder in the project root if it does not already exist.
+4. Place the downloaded model files inside the `models/` folder.
+5. Make sure the filenames match the ones used in the backend code.
+6. Run the backend after confirming the models are in the correct location.
+
+### ▶️ Run the Backend
 
 ```bash
-python backend/scripts/download_model.py
+uvicorn backend.app:app --reload
 ```
 
 ---
@@ -149,22 +160,6 @@ POST /predict-yield
 
 * Open frontend files in browser
 * Or connect via API (`http://127.0.0.1:8000`)
-
----
-
-## 📌 Important Notes
-
-* ❌ Do NOT upload:
-
-  * `venv/`
-  * `models/`
-  * `.env`
-  * `node_modules/`
-
-* ✅ Always keep:
-
-  * `requirements.txt`
-  * clean folder structure
 
 ---
 
