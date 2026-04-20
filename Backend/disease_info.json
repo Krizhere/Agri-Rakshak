@@ -1,0 +1,192 @@
+{
+  "Apple___Apple_scab": {
+    "remedy": "Apply fungicides like captan or myclobutanil",
+    "prevention": "Remove fallen leaves and maintain air circulation",
+    "severity": "Moderate"
+  },
+  "Apple___Black_rot": {
+    "remedy": "Prune infected branches and apply fungicide",
+    "prevention": "Maintain orchard hygiene",
+    "severity": "High"
+  },
+  "Apple___Cedar_apple_rust": {
+    "remedy": "Use fungicides like mancozeb",
+    "prevention": "Remove nearby cedar trees",
+    "severity": "Moderate"
+  },
+  "Apple___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Continue proper care",
+    "severity": "None"
+  },
+  "Blueberry___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain watering and soil conditions",
+    "severity": "None"
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+    "remedy": "Apply sulfur-based fungicide",
+    "prevention": "Ensure good air circulation",
+    "severity": "Moderate"
+  },
+  "Cherry_(including_sour)___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Regular monitoring",
+    "severity": "None"
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "remedy": "Use fungicides like azoxystrobin",
+    "prevention": "Crop rotation and residue management",
+    "severity": "High"
+  },
+  "Corn_(maize)___Common_rust_": {
+    "remedy": "Apply fungicide if severe",
+    "prevention": "Plant resistant varieties",
+    "severity": "Moderate"
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "remedy": "Apply fungicides early",
+    "prevention": "Use resistant hybrids",
+    "severity": "High"
+  },
+  "Corn_(maize)___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain soil fertility",
+    "severity": "None"
+  },
+  "Grape___Black_rot": {
+    "remedy": "Apply fungicides like myclobutanil",
+    "prevention": "Remove infected berries",
+    "severity": "High"
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "remedy": "Remove infected vines",
+    "prevention": "Avoid pruning wounds",
+    "severity": "High"
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "remedy": "Use copper-based fungicides",
+    "prevention": "Improve air circulation",
+    "severity": "Moderate"
+  },
+  "Grape___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Regular inspection",
+    "severity": "None"
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "remedy": "No cure, remove infected trees",
+    "prevention": "Control psyllid insects",
+    "severity": "Very High"
+  },
+  "Peach___Bacterial_spot": {
+    "remedy": "Apply copper sprays",
+    "prevention": "Avoid overhead irrigation",
+    "severity": "Moderate"
+  },
+  "Peach___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain pruning schedule",
+    "severity": "None"
+  },
+  "Pepper,_bell___Bacterial_spot": {
+    "remedy": "Use copper-based bactericides",
+    "prevention": "Use disease-free seeds",
+    "severity": "Moderate"
+  },
+  "Pepper,_bell___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain hygiene",
+    "severity": "None"
+  },
+  "Potato___Early_blight": {
+    "remedy": "Apply fungicides like chlorothalonil",
+    "prevention": "Crop rotation",
+    "severity": "Moderate"
+  },
+  "Potato___Late_blight": {
+    "remedy": "Use fungicides like metalaxyl",
+    "prevention": "Avoid excess moisture",
+    "severity": "Very High"
+  },
+  "Potato___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain soil health",
+    "severity": "None"
+  },
+  "Raspberry___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Regular care",
+    "severity": "None"
+  },
+  "Soybean___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Good farming practices",
+    "severity": "None"
+  },
+  "Squash___Powdery_mildew": {
+    "remedy": "Apply sulfur fungicide",
+    "prevention": "Avoid overcrowding",
+    "severity": "Moderate"
+  },
+  "Strawberry___Leaf_scorch": {
+    "remedy": "Use fungicides and remove infected leaves",
+    "prevention": "Proper spacing",
+    "severity": "Moderate"
+  },
+  "Strawberry___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Regular monitoring",
+    "severity": "None"
+  },
+  "Tomato___Bacterial_spot": {
+    "remedy": "Apply copper sprays",
+    "prevention": "Use resistant varieties",
+    "severity": "Moderate"
+  },
+  "Tomato___Early_blight": {
+    "remedy": "Apply fungicide regularly",
+    "prevention": "Avoid wet leaves",
+    "severity": "Moderate"
+  },
+  "Tomato___Late_blight": {
+    "remedy": "Use fungicides like metalaxyl",
+    "prevention": "Ensure good drainage",
+    "severity": "Very High"
+  },
+  "Tomato___Leaf_Mold": {
+    "remedy": "Use fungicides and improve ventilation",
+    "prevention": "Reduce humidity",
+    "severity": "Moderate"
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "remedy": "Apply fungicide and remove infected leaves",
+    "prevention": "Avoid overhead watering",
+    "severity": "Moderate"
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "remedy": "Use miticides or neem oil",
+    "prevention": "Maintain humidity",
+    "severity": "Moderate"
+  },
+  "Tomato___Target_Spot": {
+    "remedy": "Apply fungicides",
+    "prevention": "Crop rotation",
+    "severity": "Moderate"
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "remedy": "No cure, remove infected plants",
+    "prevention": "Control whiteflies",
+    "severity": "Very High"
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "remedy": "Remove infected plants",
+    "prevention": "Use virus-free seeds",
+    "severity": "High"
+  },
+  "Tomato___healthy": {
+    "remedy": "No action needed",
+    "prevention": "Maintain proper care",
+    "severity": "None"
+  }
+}
