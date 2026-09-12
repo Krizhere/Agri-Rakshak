@@ -1,6 +1,3 @@
-# ================================
-# 📦 IMPORTS
-# ================================
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -14,14 +11,8 @@ import os
 import pandas as pd
 import xgboost
 
-# ================================
-# 🚀 APP INIT
-# ================================
 app = FastAPI(title="🌱 Smart Agriculture API")
 
-# ================================
-# 🔌 CORS MIDDLEWARE (Enable Frontend Connection)
-# ================================
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -30,9 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ================================
-# 🌱 LOAD DISEASE MODEL
-# ================================
+#LOAD DISEASE MODEL
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 model_path = os.path.join(BASE_DIR, "plant_disease_model-mobileNet.h5")
@@ -46,36 +35,30 @@ try:
     with open(os.path.join(BASE_DIR, "disease_info.json"), "r") as f:
         disease_info = json.load(f)
 
-    print("✅ Disease model loaded")
+    print("Disease model loaded")
 
 except Exception as e:
-    print("❌ Disease model error:", e)
+    print("Disease model error:", e)
     disease_model = None
 
-# ================================
-# 🌾 LOAD YIELD MODEL
-# ================================
+#LOAD YIELD MODEL
 try:
     yield_model = joblib.load("yield_model.joblib")
     feature_names = joblib.load("features.joblib")
 
-    print("✅ Yield model loaded")
+    print("Yield model loaded")
 
 except Exception as e:
-    print("❌ Yield model error:", e)
+    print("Yield model error:", e)
     yield_model = None
     feature_names = None
 
-# ================================
-# 🏠 HOME
-# ================================
+
 @app.get("/")
 def home():
     return {"message": "AI Agriculture API Running 🚀"}
 
-# ================================
-# 🌱 DISEASE PREDICTION
-# ================================
+#DISEASE PREDICTION
 @app.post("/predict-disease")
 async def predict_disease(file: UploadFile = File(...)):
     try:
@@ -94,7 +77,7 @@ async def predict_disease(file: UploadFile = File(...)):
         predicted_class = list(class_names.values())[predicted_index]
         confidence = float(np.max(prediction))
 
-        # 🔥 Get disease suggestions
+        #Get disease suggestions
         info = disease_info.get(predicted_class, {})
 
         return {
@@ -109,18 +92,13 @@ async def predict_disease(file: UploadFile = File(...)):
     except Exception as e:
         return {"error": str(e)}
 
-# ================================
-# 🌾 INPUT SCHEMA
-# ================================
+#INPUT SCHEMA
 class YieldInput(BaseModel):
     Area: float
     State_Name: str
     Season: str
     Crop: str
 
-# ================================
-# 🔍 HELPER FUNCTION
-# ================================
 def find_feature_key(prefix, value):
     value = value.strip().lower()
 
@@ -133,9 +111,7 @@ def find_feature_key(prefix, value):
 
     return None
 
-# ================================
-# 🌾 YIELD PREDICTION
-# ================================
+#YIELD PREDICTION
 @app.post("/predict-yield")
 def predict_yield(data: YieldInput):
     try:
@@ -175,9 +151,6 @@ def predict_yield(data: YieldInput):
     except Exception as e:
         return {"error": str(e)}
 
-# ================================
-# ▶️ RUN SERVER
-# ================================
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
