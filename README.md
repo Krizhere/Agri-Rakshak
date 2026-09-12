@@ -26,12 +26,12 @@ The project uses a **FastAPI backend** and a modern frontend interface.
 
 **Machine Learning:**
 
-* TensorFlow / PyTorch (for disease detection)
+* Mobilenet (for disease detection)
 * XGBoost / Scikit-learn (for yield prediction)
 
 **Frontend:**
 
-* HTML, CSS, JavaScript (or your AI-generated frontend)
+* React, Tailwind css, Vite
 
 ---
 
@@ -110,14 +110,6 @@ https://drive.google.com/drive/folders/1PBCUrB0KOX-ypQOFNrbHvFCYVGmdFrtZ?usp=sha
 5. Make sure the filenames match the ones used in the backend code.
 6. Run the backend after confirming the models are in the correct location.
 
-### ▶️ Run the Backend
-
-```bash
-uvicorn backend.app:app --reload
-```
-
----
-
 ## ▶️ Run the Backend
 
 ```bash
@@ -170,20 +162,3 @@ POST /predict-yield
 * Improve model accuracy
 * Mobile app integration
 
----
-
-## 👨‍💻 Author
-
-Krish Kumar
-
----
-
-## ⭐ Contribute
-
-Feel free to fork this repository and improve the project!
-
----
-
-## 📜 License
-
-This project is for educational purposes.
