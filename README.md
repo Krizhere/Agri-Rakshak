@@ -146,7 +146,7 @@ pip install -r requirements.txt
 
 They are hosted on Google Drive.
 
-###👉 Manual Model Download
+### 👉 Manual Model Download
 Please download the trained models manually from the Google Drive folder and place them inside the models/ directory before running the backend.
 
 Google Drive folder: https://drive.google.com/drive/folders/1PBCUrB0KOX-ypQOFNrbHvFCYVGmdFrtZ?usp=sharing
