@@ -1,7 +1,7 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import numpy as np
 import json
 import joblib
@@ -24,7 +24,8 @@ app.add_middleware(
 #LOAD DISEASE MODEL
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-model_path = os.path.join(BASE_DIR, "plant_disease_model-mobileNet.h5")
+#TODO: Update the path to your actual model file
+model_path = os.path.join(BASE_DIR, "C:\\Users\\lenovo\\Desktop\\Project-1\\Models\\plant_disease_model-mobileNet.h5")
 
 try:
     disease_model = load_model(model_path, compile=False)
@@ -43,8 +44,10 @@ except Exception as e:
 
 #LOAD YIELD MODEL
 try:
-    yield_model = joblib.load("yield_model.joblib")
-    feature_names = joblib.load("features.joblib")
+    #TODO: Update the paths to your actual model and feature files
+    
+    yield_model = joblib.load("C:\\Users\\lenovo\\Desktop\\Project-1\\Models\\yield_model.joblib")
+    feature_names = joblib.load("C:\\Users\\lenovo\\Desktop\\Project-1\\Models\\features.joblib")
 
     print("Yield model loaded")
 
